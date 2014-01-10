@@ -57,7 +57,7 @@ class cyw {
 			$oauth = new OAuth( $this->consumerKey , $this->consumerSecret , OAUTH_SIG_METHOD_HMACSHA1,OAUTH_AUTH_TYPE_URI );
 			$oauth->setToken( $this->token , $this->tokenSecret );
 
-			// oauthdr
+			// post the data
 			$change->fetch("http://beta.pcw.awsripple.com/rest/v1/item"
 			 		, $data 
 			 		, OAUTH_HTTP_METHOD_POST 
